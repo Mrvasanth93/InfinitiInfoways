@@ -15,7 +15,7 @@ const WhoWeAre = () => {
           </h2>
           <div className="text-content">
             <p className="description-text">
-              We specialize in building secure defence applications, robust ERP systems, and custom software solutions tailored to client needs. Our focus is reliability, data security, and scalable architecture, helping organizations streamline operations and manage critical processes with confidence and precision.
+              We specialize in developing secure defence applications, reliable ERP systems, and customized software solutions designed to meet specific client requirements. Our team focuses on building robust, scalable architectures that ensure high performance, data security, and long-term reliability. By combining modern technologies with industry best practices, we help organizations streamline operations, improve efficiency, and manage mission-critical processes with confidence, accuracy, and complete operational control.
             </p>
           </div>
         </div>
@@ -29,6 +29,14 @@ const WhoWeAre = () => {
           <div className="image-container end">
             <img src={img3} alt="" className="card-image" />
           </div>
+        </div>
+      </div>
+      <div className="why-choose-us">
+        <div className="why-choose-us-container">
+          <h2 className="why-choose-us-title">Why Choose Us?</h2>
+        <p className="why-choose-us-text">
+          We deliver secure, scalable, and reliable software solutions with expert teams, modern technologies, on-time delivery, and a strong commitment to quality and client success.
+        </p>
         </div>
       </div>
     </section>
