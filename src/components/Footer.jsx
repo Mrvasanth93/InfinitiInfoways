@@ -23,9 +23,9 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Quick Links</h3>
             <ul className="footer-links">
-              <li><a href="/category/text-ai">Home</a></li>
-              <li><a href="/category/image-ai">About us</a></li>
-              <li><a href="/category/video-ai">Services</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Services</a></li>
               <li><a href="/category/coding-ai">Contact us</a></li>
             </ul>
           </div>

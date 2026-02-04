@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import './Contact.css';
+const phone = import.meta.env.VITE_PHONE_NUMBER;
+const email = import.meta.env.VITE_EMAIL_ADDRESS;
+const address = import.meta.env.VITE_OFFICE_ADDRESS;
+const linkedin = import.meta.env.VITE_SOCIAL_MEDIA_LINKEDIN;
+const twitter = import.meta.env.VITE_SOCIAL_MEDIA_TWITTER;
+const facebook = import.meta.env.VITE_SOCIAL_MEDIA_FACEBOOK;
+const instagram = import.meta.env.VITE_SOCIAL_MEDIA_INSTAGRAM;
+const whatsapp = import.meta.env.VITE_SOCIAL_MEDIA_wHATSAPP;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -100,7 +108,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-details">
                   <h4 className="contact-label">Office</h4>
-                  <p className="contact-text">LINDERN LUFE SCIENCES 13, 14/2 Srinivasa nagar 7th main road , Trichy 17</p>
+                  <p className="contact-text">{address || "LINDERN LUFE SCIENCES 13, 14/2 Srinivasa nagar 7th main road , Trichy 17"}</p>
                 </div>
               </div>
               <div className="contact-items-row">
@@ -110,7 +118,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-details">
                     <h4 className="contact-label">Phone</h4>
-                    <p className="contact-text">90035 84527</p>
+                    <p className="contact-text">+91 {phone || '90035 84527'}</p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -119,7 +127,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-details">
                   <h4 className="contact-label">Email</h4>
-                  <p className="contact-text">habbebrahman@gmail.com</p>
+                  <p className="contact-text">{email || "habbebrahaman@gmail.com"}</p>
                 </div>
               </div>
               </div>
@@ -130,19 +138,19 @@ const Contact = () => {
             <div className="social-media-section">
               <h4 className="social-title">Connect with us:</h4>
               <div className="social-icons">
-                <a className='social-icon' href="">
+                <a className='social-icon' href={facebook || ""}>
                   <FaFacebookF color='#1b00b4' />
                 </a>
-                <a className='social-icon' href="">
+                <a className='social-icon' href={twitter || ""}>
                   <FaTwitter color='#0087b4' />
                 </a>
-                <a className='social-icon' href="">
+                <a className='social-icon' href={linkedin || ""}>
                   <FaLinkedinIn color='#868686' />
                 </a>
-                <a className='social-icon' href="">
+                <a className='social-icon' href={instagram || ""}>
                   <FaInstagram color='#b4002a' />
                 </a>
-                <a className='social-icon' href="">
+                <a className='social-icon' href={whatsapp || ""}>
                   <FaWhatsapp color='#00b460' />
                 </a>
               </div>

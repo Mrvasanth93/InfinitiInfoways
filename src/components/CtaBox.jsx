@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiPhone } from 'react-icons/fi';
 import './CtaBox.css';
+const phone = import.meta.env.VITE_PHONE_NUMBER;
 
 const CtaBox = () => {
   return (
@@ -15,7 +16,7 @@ const CtaBox = () => {
           </p>
           <button className="cta-button">
             <FiPhone  />
-            +91 - 90035 884527
+            +91 - {phone || '90035 84527'}
           </button>
         </div>
       </div>
